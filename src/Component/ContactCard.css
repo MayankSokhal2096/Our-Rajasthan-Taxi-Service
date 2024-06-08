@@ -1,0 +1,54 @@
+.box-content {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: #f7f4ed;
+}
+
+.box-content::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: var(--theme-color);
+  transition: width 0.4s ease-in-out;
+}
+
+.box-content:hover::before,
+.box-content:active::before {
+  width: 100%;
+}
+
+.box-content:hover .contact-icon-box i,
+.box-content:active .contact-icon-box i {
+  color: var(--theme-color-black);
+}
+
+.box-contact-inner {
+  position: relative;
+  z-index: 1;
+  padding: 10px 25px;
+}
+
+.contact-icon-box i {
+  font-size: 48px;
+  color: var(--theme-color);
+  margin-top: 40px;
+}
+
+.contact-card-heading,
+.contact-card-para {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .box-content {
+    width: calc(290px + (390 - 290) * (100vw - 320px) / (500 - 320));
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .box-content {
+    width: calc(290px + (400 - 290) * (100vw - 320px) / (500 - 320));
+  }
+}

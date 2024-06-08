@@ -1,0 +1,205 @@
+.main-header-inner {
+  width: 94vw;
+  height: 100vh;
+  background: url(../Images/main-bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.side-line {
+  width: 6vw;
+  height: 60vh;
+  position: relative;
+  top: -10vh;
+  background-color: #f8bb00;
+  transform: skewY(-40deg);
+  z-index: -3;
+}
+
+.main-header-content {
+  color: #ffffff;
+  margin-left: 10%;
+}
+
+.main-header-content p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.Cheapest-taxi-box {
+  display: inline-block;
+  transform: skewX(-20deg);
+  background: #fff url(../Images/cheapest-taxi-bg.png) repeat;
+}
+
+.Cheapest-taxi-box > span {
+  display: inline-block;
+  transform: skewX(20deg);
+  color: #1b1b1b;
+  padding: 5px 20px;
+}
+
+.main-header-content h1 {
+  font-size: 2rem;
+}
+
+.main-header-content h2 {
+  font-size: 4rem;
+}
+
+.main-header-btns-link {
+  margin-top: 30px;
+}
+
+.main-header-btn {
+  width: 150px;
+  height: 50px;
+  transform: skewX(-20deg);
+}
+
+.main-header-btn::before {
+  transition: 0.5s ease all;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 50%;
+  right: 0%;
+  bottom: 50%;
+  left: 0%;
+  opacity: 0;
+}
+
+.main-header-btn:hover::before,
+.main-header-btn:active::before {
+  transition: 0.5s ease all;
+  top: 0%;
+  bottom: 0%;
+  opacity: 1;
+  z-index: -1;
+  color: #1b1b1b;
+}
+
+.main-header-btn > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  transform: skew(20deg);
+  scale: 1.1;
+  font-size: 13px;
+}
+
+.btn-1 {
+  background-color: var(--theme-color);
+  color: #1b1b1b;
+}
+
+.btn-2 {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.btn-2 > span {
+  color: #ffffff;
+}
+
+.main-header-btn > span:hover,
+.main-header-btn > span:active {
+  color: #1b1b1b;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .side-line {
+    display: none;
+  }
+
+  .main-header-inner {
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+  }
+
+  .main-header-content {
+    margin-left: 0;
+    text-align: center;
+    gap: 5px 0px;
+  }
+
+  .main-header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .main-header-content h1,
+  .main-header-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .main-header-btns-link {
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  .main-header-btn {
+    width: 125px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .side-line {
+    display: none;
+  }
+
+  .main-header-inner {
+    width: 100vw;
+    height: calc(80vh + (140 - 75) * (100vw - 501px) / (768 - 501));
+    justify-content: center;
+  }
+
+  .main-header-content {
+    margin-left: 0;
+    text-align: center;
+    gap: 5px 0px;
+  }
+
+  .main-header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .main-header-content h1,
+  .main-header-content h2 {
+    font-size: 2rem;
+  }
+
+  .main-header-btns-link {
+    margin-top: 15px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-header-inner {
+    height: calc(100vh + (140 - 100) * (100vw - 768px) / (1024 - 768));
+  }
+
+  .main-header-content {
+    margin-left: 10%;
+    gap: 10px 0px;
+  }
+
+  .main-header-content p {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .main-header-content h1,
+  .main-header-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .main-header-btns-link {
+    margin-top: 20px;
+  }
+}

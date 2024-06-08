@@ -1,0 +1,25 @@
+.service-card-sec {
+  padding: 50px 60px 120px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .service-card-sec {
+    padding: 40px 10px 120px;
+  }
+
+  .service-card-sec h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .service-card-sec {
+    padding: 40px 10px 140px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .service-card-sec {
+    padding: 40px 20px 160px;
+  }
+}

@@ -1,0 +1,316 @@
+.your-journey-section {
+  padding: 100px 120px;
+}
+
+.your-journey-inner {
+  width: 100%;
+  gap: 0px 50px;
+}
+
+.your-journey-images,
+.your-journey-content {
+  width: 50%;
+}
+
+.your-journey-img-box-1 img {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.your-journey-img-box-2 {
+  text-align: right;
+  margin-top: -35%;
+}
+
+.your-journey-img-box-2 img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border: 8px solid #ffffff;
+}
+
+.your-journey-content > p {
+  color: var(--theme-color);
+  font-weight: 700;
+}
+
+.your-journey-content h2 {
+  font-size: 2.5rem;
+  color: #1b1b1b;
+}
+
+.your-journey-para-box {
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  padding: 27px 35px;
+  margin-bottom: 30px;
+}
+
+.mobile-details-box {
+  background-color: var(--theme-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.mobile-details-box img {
+  width: 40px;
+}
+
+.mobile-details-content div {
+  font-size: 1.1rem;
+}
+
+.mobile-details-content p {
+  font-size: 1.4rem;
+}
+
+.mobile-details {
+  padding-bottom: 35px;
+  border-bottom: 2px solid #ededed;
+}
+
+.get-more-btn {
+  width: 160px;
+  height: 55px;
+  transform: skewX(-20deg);
+  background-color: var(--theme-color);
+}
+
+.get-more-btn::before {
+  transition: 0.5s ease all;
+  content: "";
+  position: absolute;
+  background-color: var(--theme-color-black);
+  top: 50%;
+  right: 0%;
+  bottom: 50%;
+  left: 0%;
+  opacity: 0;
+}
+
+.get-more-btn:hover::before,
+.get-more-btn:active::before {
+  transition: 0.5s ease all;
+  top: 0%;
+  bottom: 0%;
+  opacity: 1;
+  z-index: -1;
+}
+
+.get-more-btn > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transform: skew(20deg);
+  scale: 1.1;
+}
+
+.our-taxi-service-section {
+  background-color: #f7f7f7;
+  padding: 100px 40px 130px;
+  gap: 0px 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .your-journey-section {
+    padding: 50px 15px;
+    text-align: center;
+  }
+
+  .your-journey-inner {
+    width: 100%;
+    gap: 10px 0px;
+    flex-direction: column;
+  }
+
+  .your-journey-images,
+  .your-journey-content {
+    width: 100%;
+  }
+
+  .your-journey-img-box-1 img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .your-journey-img-box-2 img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .your-journey-content > p {
+    font-size: 20px;
+  }
+
+  .your-journey-content h2 {
+    font-size: 2rem;
+  }
+
+  .your-journey-para-box {
+    padding: 25px 15px;
+    margin-bottom: 20px;
+  }
+
+  .mobile-details {
+    padding: 10px 10px 30px;
+    justify-content: center;
+  }
+
+  .mobile-details-content {
+    align-items: flex-start;
+  }
+
+  .your-journey-btn {
+    justify-content: center;
+  }
+
+  .our-taxi-service-section {
+    background-color: #f7f7f7;
+    padding: 60px 10px 130px;
+    gap: 25px 0px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .your-journey-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .your-journey-inner {
+    width: 100%;
+    gap: 10px 0px;
+    flex-direction: column;
+  }
+
+  .your-journey-images,
+  .your-journey-content {
+    width: 100%;
+    padding: calc(20px + (30 - 20) * (100vw - 501px) / (768 - 501))
+      calc(20px + (60 - 20) * (100vw - 501px) / (768 - 501));
+  }
+
+  .your-journey-img-box-1 img {
+    width: calc(440px + (500 - 440) * (100vw - 501px) / (768 - 501));
+    height: calc(440px + (500 - 440) * (100vw - 501px) / (768 - 501));
+  }
+
+  .your-journey-img-box-2 img {
+    width: calc(300px + (350 - 300) * (100vw - 501px) / (768 - 501));
+    height: calc(300px + (350 - 300) * (100vw - 501px) / (768 - 501));
+  }
+
+  .your-journey-content > p {
+    font-size: 20px;
+  }
+
+  .your-journey-content h2 {
+    font-size: 2rem;
+  }
+
+  .your-journey-para-box {
+    padding: 25px 15px;
+    margin-bottom: 20px;
+  }
+
+  .mobile-details {
+    padding: 20px 20px 40px;
+    justify-content: center;
+  }
+
+  .mobile-details-content {
+    align-items: flex-start;
+  }
+
+  .your-journey-btn {
+    justify-content: center;
+  }
+
+  .our-taxi-service-section {
+    background-color: #f7f7f7;
+    padding: 60px 10px 130px;
+    gap: 25px 10px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .your-journey-section {
+    padding: 50px 20px;
+    /* text-align: center; */
+  }
+
+  .your-journey-inner {
+    width: 100%;
+    gap: 10px 0px;
+    flex-direction: column;
+  }
+
+  .your-journey-images,
+  .your-journey-content {
+    width: 100%;
+    padding: calc(20px + (30 - 20) * (100vw - 768px) / (1024 - 768))
+      calc(20px + (60 - 20) * (100vw - 768px) / (1024 - 768));
+  }
+
+  .your-journey-img-box-1 img {
+    width: calc(500px + (550 - 500) * (100vw - 768px) / (1024 - 768));
+    height: calc(500px + (550 - 500) * (100vw - 768px) / (1024 - 768));
+  }
+
+  .your-journey-img-box-2 img {
+    width: calc(350px + (400 - 350) * (100vw - 768px) / (1024 - 768));
+    height: calc(350px + (400 - 350) * (100vw - 768px) / (1024 - 768));
+  }
+
+  .your-journey-content > p {
+    font-size: 20px;
+  }
+
+  .your-journey-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .your-journey-para-box {
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .mobile-details {
+    padding: 20px 20px 40px;
+    justify-content: center;
+  }
+
+  .mobile-details-content {
+    align-items: flex-start;
+  }
+
+  .your-journey-btn {
+    justify-content: center;
+  }
+
+  .our-taxi-service-section {
+    background-color: #f7f7f7;
+    padding: 60px 10px 130px;
+    gap: 25px 10px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .your-journey-section {
+    padding: 90px 50px;
+  }
+}

@@ -1,0 +1,67 @@
+.front-header-inner {
+  width: 94vw;
+  height: 70vh;
+  background: url(../Images/nav-link-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.front-header-inner h1 {
+  font-size: 10rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: inherit;
+  height: inherit;
+  text-transform: uppercase;
+}
+
+.side-line {
+  width: 6vw;
+  height: 60vh;
+  position: relative;
+  top: -10vh;
+  background-color: #f8bb00;
+  transform: skewY(-40deg);
+  z-index: -3;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .side-line {
+    display: none;
+  }
+
+  .front-header-inner {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .front-header-inner h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .side-line {
+    display: none;
+  }
+
+  .front-header-inner {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .front-header-inner h1 {
+    font-size: calc(80px + (100 - 80) * (100vw - 501px) / (768 - 501));
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .front-header-inner h1 {
+    font-size: calc(100px + (130 - 100) * (100vw - 768px) / (1024 - 768));
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .front-header-inner {
+    height: calc(70vh + (100 - 70) * (100vw - 1024px) / (1440 - 1024));
+  }
+}

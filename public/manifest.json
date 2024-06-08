@@ -1,0 +1,12 @@
+{
+  "name": "Our Rajasthan Taxi Service Bikaner",
+  "short_name": "Our Rajasthan Taxi Service Bikaner",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "display": "standalone"
+}
