@@ -6,7 +6,7 @@ import NavLogo from "../Images/our rajasthan transparent logo.png";
 const SmallSideBar = ({ forwardedRefB }) => {
   const handleClick = () => {
     forwardedRefB.current.style.left = "-150%";
-  };
+  }
 
   return (
     <>
