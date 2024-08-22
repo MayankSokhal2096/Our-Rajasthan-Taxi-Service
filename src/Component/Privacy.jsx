@@ -547,7 +547,7 @@ const Privacy = () => {
                   rel="external nofollow noopener"
                   target="_blank"
                 >
-                  <span className="theme-golden contact-url-box">
+                  <span className="theme-color contact-url-box">
                     https://ourrajasthantaxiservicebikaner.com/contact
                   </span>
                 </a>
